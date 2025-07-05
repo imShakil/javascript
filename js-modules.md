@@ -2,6 +2,12 @@
 
 JavaScript modules allow you to break up your code into separate files. This makes it easier to maintain a code-base. Modules are imported from external files with the `import statement`. Modules also rely on type="module" in the `<script>` tag.
 
+```js
+<script type="module">
+import message from "./message.js"
+</script>
+```
+
 ## Import
 
 You can import modules into a file in two ways, based on if they are named exports or default exports. Named exports are constructed using curly braces. Default exports are not.
@@ -40,5 +46,4 @@ There are two types of exports: `Named Exports` and `Default Exports`:
     export default message;
     ```
 
-> Modules only work with the `HTTP(s)` protocol. A web-page opened via the `file:// protocol` cannot use `import / export`.
-
+> Modules only work with the `HTTP(s)` protocol. A web-page opened via the `file:// protocol` cannot use `import / export`. You can only have one 'default export' in a module file.
